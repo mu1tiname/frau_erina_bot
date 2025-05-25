@@ -98,7 +98,7 @@ async def process_next_word(user_id):
     if user_data["index"] < len(user_data["words"]):
         await bot.send_message(chat_id=user_id, text="⏳ Ждем 5 минут перед следующим словом...")
 
-        # Ожидаем 5 минут
+        # Ожидаем "_XX_" секунд
         await asyncio.sleep(30)
 
         # Отправляем следующее слово
